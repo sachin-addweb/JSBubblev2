@@ -1,0 +1,136 @@
+$color-white: #fff;
+$color-black: #000;
+
+body {
+  margin: 0;
+  padding: 100px 20px;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item-list {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  // overflow: hidden;
+  .item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition-duration: 0.5s;
+    z-index: 0;
+    background-color: $color-black;
+    &.circle {
+      border-radius: 50%;
+      text-align: center;
+    }
+    &.grid-item--large {
+      z-index: 99999999;
+    }
+    * {
+      color: $color-white;
+      margin: 0;
+    }
+    span {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+}
+.stamp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 160px;
+  // background: #C90;
+  &.stamp1 {
+    top: 130px;
+    height: 50px;
+  }
+  &.stamp2 {
+    top: 260px;
+    height: 200px;
+    width: 22%;
+  }
+  &.stamp3 {
+    top: 460px;
+    height: 200px;
+    width: 10%;
+  }
+  &.stamp4 {
+    top: 660px;
+    height: 600px;
+    width: 5%;
+  }
+  &.stamp5 {
+    top: auto;
+    bottom: 0;
+    height: 430px;
+    width: 35%;
+  }
+  &.stamp6 {
+    top: auto;
+    bottom: 50px;
+    right: 0;
+    left: auto;
+    height: 500px;
+    width: 10%;
+  }
+  &.stamp7 {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    height: 50px;
+    width: 80%;
+  }
+  &.stamp8 {
+    top: 400px;
+    bottom: auto;
+    height: 430px;
+    width: 5%;
+    right: 0;
+    left: auto;
+  }
+}
+// Circle BG Colors
+$count: 100;
+@for $i from 1 through $count {
+  .item {
+    &:nth-child(#{$i}) {
+      background-color: rgb(random(255), random(255), random(255));
+    }
+  }
+}
+.item:nth-child(10) {
+  background-color: #007d8e;
+}
+.item:nth-child(56) {
+  background-color: #00e0e0;
+}
+.item:nth-child(42) {
+  background-color: #00e235;
+}
+.item:nth-child(38) {
+  background-color: #ff0000;
+}
+.item:nth-child(31) {
+  background-color: #56bdef;
+}
+
+$count: 100;
+@for $j from 1 through $count {
+  .item {
+    transform: translate3d(random(30) + px, random(40) + px, random(50) + px);
+    &:focus ~ &,
+    &:hover ~ & {
+      transform: translate3d(random(80) + px, random(80) + px, random(80) + px);
+    }
+  }
+}

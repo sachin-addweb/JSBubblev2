@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Bubble</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul id="js__itemList" class="item-list">
+        <li class="stamp"></li>
+        <li class="stamp stamp1"></li>
+        <li class="stamp stamp2"></li>
+        <li class="stamp stamp3"></li>
+        <li class="stamp stamp4"></li>
+        <li class="stamp stamp5"></li>
+        <li class="stamp stamp6"></li>
+        <li class="stamp stamp7"></li>
+        <li class="stamp stamp8"></li>
+        <li id="item1" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)" class="item circle flexFont"
+            style="width: 350px; height: 350px;">
+            <p>English</p>
+            <span>361</span>
+        </li>
+        <li id="item10" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Dutch</p>
+            <span>2</span>
+        </li>
+
+        <li id="item33" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Punjabi</p>
+            <span>1</span>
+        </li>
+        <li id="item34" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Irish</p>
+            <span>1</span>
+        </li>
+
+        <li id="item36" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 76px; height: 76px;">
+            <p>Sindhi</p>
+            <span>1</span>
+        </li>
+        <li id="item3" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 160px; height: 160px;">
+            <p>Cantonese</p>
+            <span>12</span>
+        </li>
+        <li id="item6" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Croatian</p>
+            <span>1</span>
+        </li>
+        <li id="item7" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Danish</p>
+            <span>1</span>
+        </li>
+        <li id="item18" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Kannada</p>
+            <span>2</span>
+        </li>
+        <li id="item4" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Catalan</p>
+            <span>2</span>
+        </li>
+        <li id="item5" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 136px; height: 136px;">
+            <p>Bengali</p>
+            <span>7</span>
+        </li>
+        <li id="item35" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 132px; height: 132px;">
+            <p>Portuguese</p>
+            <span>6</span>
+        </li>
+        <li id="item12" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height:100px;">
+            <p>German</p>
+            <span>4</span>
+        </li>
+        <li id="item14" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Hebrew</p>
+            <span>1</span>
+        </li>
+        <li id="item13" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 152px; height: 152px;">
+            <p>Gujarati</p>
+            <span>10</span>
+        </li>
+        <li id="item9" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 142px; height: 142px;">
+            <p>Arabic</p>
+            <span>8</span>
+        </li>
+        <li id="item11" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 163px; height: 163px;">
+            <p>French</p>
+            <span>15</span>
+        </li>
+        <li id="item16" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 78px; height: 78px;">
+            <p>Japanese</p>
+            <span>1</span>
+        </li>
+
+        <li id="item22" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 170px; height: 170px;">
+            <p>Marathi</p>
+            <span>33</span>
+        </li>
+        <li id="item23" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 77px; height: 77px;">
+            <p>Latvian</p>
+            <span>1</span>
+        </li>
+        <li id="item24" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Lithuanian</p>
+            <span>1</span>
+        </li>
+        <li id="item25" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Malay</p>
+            <span>2</span>
+        </li>
+        <li id="item27" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 147px; height: 147px;">
+            <p>Russian</p>
+            <span>9</span>
+        </li>
+        <li id="item28" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Romanian</p>
+            <span>4</span>
+        </li>
+        <li id="item29" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Nepali</p>
+            <span>2</span>
+        </li>
+        <li id="item15" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 180px; height: 180px;">
+            <p>Hindi</p>
+            <span>71</span>
+        </li>
+        <li id="item2" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 142px; height: 142px;">
+            <p>Greek</p>
+            <span>8</span>
+        </li>
+        <li id="item19" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Kazakh</p>
+            <span>2</span>
+        </li>
+        <li id="item20" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Korean</p>
+            <span>2</span>
+        </li>
+        <li id="item17" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 158px; height: 158px;">
+            <p>Italian</p>
+            <span>13</span>
+        </li>
+        <li id="item21" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Latin</p>
+            <span>1</span>
+        </li>
+        <li id="item30" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 190px; height: 190px;">
+            <p>Spanish</p>
+            <span>81</span>
+        </li>
+        <li id="item31" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 136px; height: 136px;">
+            <p>Persian</p>
+            <span>7</span>
+        </li>
+        <li id="item32" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 147px; height: 147px;">
+            <p>Polish</p>
+            <span>9</span>
+        </li>
+        <li id="item38" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Turkmen</p>
+            <span>1</span>
+        </li>
+        <li id="item45" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Azerbaijani</p>
+            <span>1</span>
+        </li>
+        <li id="item46" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Thai</p>
+            <span>2</span>
+        </li>
+        <li id="item39" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Swedish</p>
+            <span>1</span>
+        </li>
+        <li id="item40" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 110px; height: 110px;">
+            <p>Tagalog</p>
+            <span>3</span>
+        </li>
+        <li id="item41" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Taiwanese</p>
+            <span>2</span>
+        </li>
+        <li id="item42" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Bulgarian</p>
+            <span>1</span>
+        </li>
+        <li id="item43" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 136px; height: 136px;">
+            <p>Tamil</p>
+            <span>7</span>
+        </li>
+        <li id="item44" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 132px; height: 132px;">
+            <p>Telugu</p>
+            <span>6</span>
+        </li>
+        <li id="item47" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 163px; height: 163px;">
+            <p>Mandarin</p>
+            <span>15</span>
+        </li>
+        <li id="item37" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 132px; height: 132px;">
+            <p>Malayalam</p>
+            <span>6</span>
+        </li>
+        <li id="item48" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 132px; height: 132px;">
+            <p>Turkish</p>
+            <span>6</span>
+        </li>
+        <li id="item8" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 173px; height: 173px;">
+            <p>Chinese</p>
+            <span>38</span>
+        </li>
+        <li id="item26" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Maltese</p>
+            <span>1</span>
+        </li>
+        <li id="item49" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 125px; height: 125px;">
+            <p>Ukrainian</p>
+            <span>5</span>
+        </li>
+        <li id="item50" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 100px; height: 100px;">
+            <p>Urdu</p>
+            <span>4</span>
+        </li>
+        <li id="item51" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Somali</p>
+            <span>1</span>
+        </li>
+        <li id="item52" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 152px; height: 152px;">
+            <p>Vietnamese</p>
+            <span>10</span>
+        </li>
+        <li id="item53" class="item circle flexFont" onmouseenter="circleGrow(this)" onmouseleave="circleShrink(this)"
+            style="width: 80px; height: 80px;">
+            <p>Yoruba</p>
+            <span>1</span>
+        </li>
+    </ul>
+    <!-- Packery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.1/packery.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
